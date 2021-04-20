@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ND</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="urlapvalidacio.js" type="text/javascript"></script>
+        <link href="szerkezet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Üdvözöljük a weblapunkon!</h1>
+            </header>
+            <nav>
+                <a href="index.html">Űrlap</a>
+                <a href="#">Menü 1</a> 
+                <a href="#">Menü 2</a>
+
+            </nav>
+            <article>
+                <h2>Kérem adja meg az adatait!</h2>
+                <form method="get" >
+                    <fieldset>
+                        <div class="urlapelem"   >
+                            <label for="nev">Név</label>
+                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+
+                        </div> 
+                        <br>
+                        <div class="urlapelem"   >
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="email" placeholder="valaki@vmi.hu" title="email" >
+                        </div> 
+                        <div class="urlapelem"   >
+                            <label for="email2">E-mail újra</label>
+                            <input type="text" name="email2" id="email2" placeholder="valaki@vmi.hu" title="email" >
+
+                        </div> 
+                        <br>
+                        <div class="urlapelem"   >
+                            <label for="tsz">Telefonszám</label>
+                            <input type="text" name="tsz" id="tsz" placeholder="+36-30-000-0000" title="Telefonszám" >
+                        </div> 
+                    </fieldset>
+                    <fieldset>
+                        <div class="urlapelem"   >
+                            <label for="web">Weboldal</label>
+                            <input type="text" name="web" id="web" placeholder="http://valami.hu" title="Weboldal" >
+
+                        </div> 
+                        <br>
+                        <div class="urlapelem2"   >
+                            <label for="pr">Prioritás:</label>
+
+                            <select id="pr" name="pr">
+                                <option value="alacsony">alacsony</option>
+                                <option value="közepes">közepes</option>
+                                <option value="magas">magas</option>
+                            </select>
+
+                        </div> 
+
+                        <br>
+                        <div class="urlapelem"   >
+                            <label for="uzenet">Üzenet</label>
+                            <textarea name="uzenet" id="uzenet" style="height: 100px"></textarea>
+                        </div> 
+                    </fieldset>
+
+
+
+                    <input type="button" id="kuld" value="Küld">
+                    <br>
+                    <div class="torol2">
+                        <input type="button" id="torol" value="Töröl" >
+                    </div>
+                </form>
+            </article>
+            <aside>
+                <section>
+                    <h3>
+                        Űrlap validáció</h3>
+                    <p>
+                        Itt jelenik majd meg, hoyg van-e hiba az űrlap kitöltésekor. Például űres mező, vagy nem megfelelő formátumú e-mail cím, weboldal, telefonszám.
+                    </p>
+
+                </section>
+                <section>
+                    <h3>Űrlap adatok</h3>
+                    <p>
+                        Itt jelennek majd meg a z űrlapon megadott adatok  </p>
+                </section>
+
+
+            </aside>
+            <footer>
+                <p>Céggel kapcsolat információk</p>
+            </footer>
+        </main>
+    </body>
+</html>

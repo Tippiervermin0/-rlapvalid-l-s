@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+main{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+main{
+    display: grid;
+    grid-template-areas:
+        "h h h h h"
+        "n t t t a"
+        "f f f f f";
+
+    grid-gap: 10px;
+}
+
+header{
+    background-color: orange;
+    grid-area: h;
+
+}
+nav{
+    background-color: lightgreen;
+    grid-area: n;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+article{
+    background-color: sandybrown;
+    grid-area: t;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+aside{
+    background-color: cornflowerblue;
+    grid-area: a;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer{
+    background-color: pink;
+    grid-area: f;
+}
+
+nav a {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+nav{
+    padding-right: 50px; 
+}
+
+.urlapelem{
+    text-align: right;
+}
+article{
+    text-align: right;
+}
+.urlapelem2{
+    text-align: left;
+}
+section{
+    background-color: bisque;
+}
+section p, h3{
+    padding: 10px;
+}
+
+#kuld{
+    width: 180px;
+}
+#torol{
+    width: 100px;
+}
+.torol2{
+    text-align: left;
+}
+
